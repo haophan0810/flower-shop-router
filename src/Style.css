@@ -263,7 +263,9 @@ li.level-2 {
         list-style-type: none;
         display: block;
     }
-
+ li {
+     list-style: none;
+ }
 .li-list-level-2 {
     padding: 10px;
     font-size: 15px;

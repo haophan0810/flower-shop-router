@@ -6,7 +6,7 @@ export default class ShopSpecialIndex extends Component {
         <div id="shops-special">
         <div className="shop-special">
           <div className="shop-special-img">
-            <img src="images/birthday-index.jpg" alt />
+            <img src="images/birthday-index.jpg" alt='hello' />
             <div className="div-img-frames" />
             <div className="div-img-bg">
               <a href="./products-birthday.htm" className="links-shop">
@@ -23,7 +23,7 @@ export default class ShopSpecialIndex extends Component {
         </div>
         <div className="shop-special">
           <div className="shop-special-img">
-            <img src="images/wedding-index.jpg" alt />
+            <img src="images/wedding-index.jpg" alt='hello' />
             <div className="div-img-frames" />
             <div className="div-img-bg">
               <a href="./products-wedding.html" className="links-shop">
@@ -40,7 +40,7 @@ export default class ShopSpecialIndex extends Component {
         </div>
         <div className="shop-special">
           <div className="shop-special-img">
-            <img src="images/chrismas-index.jpg" alt />
+            <img src="images/chrismas-index.jpg" alt='hello' />
             <div className="div-img-frames" />
             <div className="div-img-bg">
               <a href="./products-require.html" className="links-shop">

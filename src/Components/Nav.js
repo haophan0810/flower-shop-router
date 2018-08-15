@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import  './../Style.css';
+import {  BrowserRouter as Router,  Route,  Link} from 'react-router-dom';
+
 
 export default class Nav extends Component {
   render() {
@@ -11,11 +13,19 @@ export default class Nav extends Component {
     <div id="nav-up">
       {/* LOGO */}
       <div id="logo">
-        <a href="./index.html" title="Trang chủ">
+      <li>
+          <Link to="/">
           <span className="text-logo">
             <img id="img-logo" src="images/logo-2.png" alt="new" title="Trang chủ" />
           </span>
-        </a>
+          </Link>
+        </li>
+      
+        {/* <a href="./index.html" title="Trang chủ">
+          <span className="text-logo">
+            <img id="img-logo" src="images/logo-2.png" alt="new" title="Trang chủ" />
+          </span>
+        </a> */}
       </div>
       {/* SEARCH */}
       <div id="menu-search">

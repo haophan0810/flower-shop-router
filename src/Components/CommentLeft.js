@@ -6,7 +6,7 @@ export default class CommentLeft extends Component {
         <div className="row-comment">
         <div className="comment-img">
           <div className="comment-img-wrap">
-            <img src="images/customers/cus02.jpg" alt />
+            <img src="images/customers/cus02.jpg" alt="customer" />
           </div>
         </div>
         <div className="comment-content">

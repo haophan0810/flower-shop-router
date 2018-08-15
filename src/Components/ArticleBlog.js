@@ -5,7 +5,7 @@ export default class ArticleBlog extends Component {
     return (
         <div className="article-blog">
         <div className="article-blog-img">
-          <img src="images/2-2.jpg" alt />
+          <img src="images/2-2.jpg" alt="ad" />
           <div className="div-img-frames" />
           <div className="div-img-bg">
             <a href className="links-shop">

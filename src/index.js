@@ -11,20 +11,25 @@ import Footer from './Components/Footer.js';
 import BackToTop from './Components/BackToTop.js';
 import CartControl from './Components/CartControl.js';
 import PhoneRing from './Components/PhoneRing.js';
+import RouterURL from './Components/router/RouterURL';
+import {  BrowserRouter as Router,  Route,  Link} from 'react-router-dom';
+
 
 class App extends Component {
     render() {
         return (
+            <Router>
             <div className="app">
                 <Nav />
                 <Slide />
                 <TransformIndex />
-                <MainContentIndex />
+                <RouterURL />
                 <Footer />
                 <BackToTop />
                 <CartControl />
                 <PhoneRing />
             </div>
+            </Router>
         );
     }
 }

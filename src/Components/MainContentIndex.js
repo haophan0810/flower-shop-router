@@ -8,13 +8,43 @@ import CommentLeft from './CommentLeft.js';
 import CommentRight from './CommentRight.js';
 import PromotionThre from './PromotionThree.js';
 import ArticleBlog from './ArticleBlog.js';
-
+import dataBirthday from '../data/data-birthday-products.json';
 
 
 import './../index.css';
 
 export default class MainContentIndex extends Component {
+
+  renderProducts(n,index){
+    let allProducts=[];
+    for(let i = index; i<n+index; i++){
+      allProducts.push(
+        <Product 
+        src={dataBirthday[i].src}
+        codePromotion = {dataBirthday[i].codePromotion}
+        cost={dataBirthday[i].cost}
+        sale= {dataBirthday[i].sale}
+        key={i}
+        name = {dataBirthday[i].name}
+        id= {dataBirthday[i].id}
+        title= {dataBirthday[i].title}
+      
+      />
+      )
+     
+    };
+    console.log('allProducts :', allProducts);
+    return (
+      <div>
+           {allProducts} 
+        </div>
+    )
+
+  };
   render() {
+  console.log('this.renderProducts(7) :', this.renderProducts(7));
+
+    console.log('dataBirthday :', dataBirthday);
     return (
         <section id="main-section">
         <div className="wrap">
@@ -27,18 +57,11 @@ export default class MainContentIndex extends Component {
           <div id="products-special">
             <div className="title-group">Hoa Đặc biệt
               <div className="line-title">
-                <img src="./images/slide/line.png" alt />
+                <img src="./images/slide/line.png" alt="test" />
               </div>
             </div>
             <div className="all-products" id="content-products-special">
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
+              {this.renderProducts(8,0)}
 
             <div className="clear" ></div>
             </div>
@@ -51,18 +74,12 @@ export default class MainContentIndex extends Component {
           <div id="products-hot">
             <div className="title-group">Hoa bán chạy
               <div className="line-title">
-                <img src="./images/slide/line.png" alt />
+                <img src="./images/slide/line.png" alt="test" />
               </div>
             </div>
             <div className="all-products" id="content-products-best-sellest">
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
+            {this.renderProducts(8,10)}
+
 
               </div>
             <div className="clear" />
@@ -73,7 +90,7 @@ export default class MainContentIndex extends Component {
         <div className="wrap">
           <h2 className="comment-header">Hoa ở flowers.vn như thế nào?</h2>
           <div className="line-title">
-            <img src="./images/slide/line.png" alt />
+            <img src="./images/slide/line.png" alt="test" />
           </div>
           <CommentLeft />
           <CommentRight />
@@ -87,7 +104,7 @@ export default class MainContentIndex extends Component {
         <div className="wrap">
           <h2 className="blog-header">Blog</h2>
           <div className="line-title">
-            <img src="./images/slide/line.png" alt />
+            <img src="./images/slide/line.png" alt="test" />
           </div>
           <div id="blog">
             <ArticleBlog />
@@ -118,7 +135,7 @@ export default class MainContentIndex extends Component {
           <div className="wrap">
             <h2 className="header-question">Bạn có câu hỏi nào?</h2>
             <div className="line-title">
-              <img src="./images/slide/line.png" alt />
+              <img src="./images/slide/line.png" alt="test" />
             </div>
             <div className="question-wrap">
               <div className="question-user-name">
